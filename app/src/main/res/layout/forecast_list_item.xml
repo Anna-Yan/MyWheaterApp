@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="100dp"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginRight="10dp"
+                                    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+        <TextView
+                android:id="@+id/dateText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="01.01.1970"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        <TextView
+                android:id="@+id/degreeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text = "Degrees"
+                android:layout_below="@id/weatherIcon" />
+        <ImageView
+                android:id="@+id/weatherIcon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:contentDescription="Weather Icon"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
